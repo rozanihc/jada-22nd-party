@@ -31,7 +31,8 @@ for (let i = 0; i < 15; i++) {
 // Check sleepover availability when user selects "Yes"
 document.getElementById("sleepover").addEventListener("change", function(e) {
     if (e.target.value === "Yes, I want to stay! 🛏️") {
-        fetch("https://sheetdb.io/api/v1/z5qcaec937nkq?search=Sleepover=Yes, I want to stay! 🛏️")
+        const searchValue = encodeURIComponent("Yes, I want to stay! 🛏️");
+        fetch(`https://sheetdb.io/api/v1/z5qcaec937nkq?search=Sleepover=${searchValue}`)
             .then(res => res.json())
             .then(data => {
                 const sleeperCount = data.length;
@@ -58,7 +59,8 @@ form.addEventListener("submit", function(e) {
     const sleepover = document.getElementById("sleepover").value;
 
     // Check sleepover count
-    fetch("https://sheetdb.io/api/v1/z5qcaec937nkq?search=Sleepover=Yes, I want to stay! 🛏️")
+    const searchValue = encodeURIComponent("Yes, I want to stay! 🛏️");
+    fetch(`https://sheetdb.io/api/v1/z5qcaec937nkq?search=Sleepover=${searchValue}`)
         .then(res => res.json())
         .then(data => {
             const sleeperCount = data.length;
