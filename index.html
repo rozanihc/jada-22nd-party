@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jada's 22nd 🎀 Karaoke Night</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Y2K Font -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="container">
+
+
+<h1>
+    <span>💗</span>
+    <div>
+        JADA'S 22ND WOMB<br>
+        EVICTION PARTY
+    </div>
+    <span>💗</span>
+</h1>
+<h2>March 13th</h2>
+<h3> 📍48 Holland St NG7 5DS</h3>
+
+<div id="countdown"></div>
+
+<form id="rsvpForm">
+
+<input type="text" id="name" placeholder="Your Name 💕" required>
+
+<select id="attendance" required>
+<option value="">Will you attend?</option>
+<option>Yes 💗</option>
+<option>No 😢</option>
+</select>
+
+<input type="text" id="allergens" placeholder="Food Allergies 🚫">
+<input type="text" id="song" placeholder="Karaoke Song 🎤" required>
+
+<p class="byob-note">🍾 BYOB! Soft drinks welcome too </p>
+
+
+<p class="sleepover-note">🛏️ Sleepover space available for 5 people! <br> First come, first served <br> £20 to stay the night 🛏️</p>
+
+<select id="sleepover" required>
+<option value="">Want to stay over?</option>
+<option>Yes, I want to stay! 🛏️</option>
+<option>No thanks 😴</option>
+</select>
+
+
+<div class="spotify-section">
+    <h3>🎵 Party Playlist 🎵</h3>
+    <p>Help us set the vibe! Add your favorite songs to the party playlist:</p>
+    <a href="https://open.spotify.com/playlist/6pnF5Esnrl8m80ShCe5hcl?si=9Wy0_1cFSe2Y6MZ6tVumaQ&pi=GkIr090aTMWul&pt=a26c15fc0854348b332380fa69daaab6" target="_blank" class="spotify-btn">🎶 Open Spotify Playlist 🎶</a>
+</div>
+
+<button type="submit">Submit RSVP 💌</button>
+
+</form>
+
+<p id="responseMsg"></p>
+
+
+
+<button onclick="toggleSecret()">💖 Secret Message 💖</button>
+<div id="secretMessage">
+Jada, you deserve the loudest love, the brightest lights, and the softest kisses.
+Happy 22nd my pink princess. 🎀💗
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

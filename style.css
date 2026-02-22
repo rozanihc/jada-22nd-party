@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(45deg, hotpink, deeppink, magenta);
+    overflow-x: hidden;
+    color: white;
+    text-align: center;
+}
+
+/* Glitter Cursor */
+body {
+    cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym46.cur'), auto;
+}
+
+.container {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 0 40px hotpink;
+}
+
+
+h1 {
+    font-size: 18px;
+    text-shadow: 0 0 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 div {
+    text-align: center;
+}
+
+.sleepover-note {
+    background: rgba(255, 182, 193, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.spotify-section {
+    background: rgba(255, 182, 193, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.spotify-section h3 {
+    margin-top: 0;
+}
+
+.spotify-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: transform 0.2s;
+}
+
+.spotify-btn:hover {
+    transform: scale(1.05);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: none;
+    font-family: inherit;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: white;
+    color: hotpink;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hotpink;
+    color: white;
+}
+
+#secretMessage {
+    display: none;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #ffe6f7;
+}
+
+/* Falling hearts */
+.hearts::before {
+    content: "💗 💕 💖 💞 💓";
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    font-size: 24px;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100vh); }
+}
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    font-size: 2em;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.heart:nth-child(1) { left: 10%; animation-duration: 6s; animation-delay: 0s; }
+.heart:nth-child(2) { left: 20%; animation-duration: 7s; animation-delay: 0.5s; }
+.heart:nth-child(3) { left: 30%; animation-duration: 8s; animation-delay: 1s; }
+.heart:nth-child(4) { left: 40%; animation-duration: 6.5s; animation-delay: 1.5s; }
+.heart:nth-child(5) { left: 50%; animation-duration: 7.5s; animation-delay: 0s; }
+.heart:nth-child(6) { left: 60%; animation-duration: 8s; animation-delay: 0.5s; }
+.heart:nth-child(7) { left: 70%; animation-duration: 6s; animation-delay: 1s; }
+.heart:nth-child(8) { left: 80%; animation-duration: 7s; animation-delay: 1.5s; }
+.heart:nth-child(9) { left: 90%; animation-duration: 8s; animation-delay: 0s; }
+.heart:nth-child(10) { left: 15%; animation-duration: 7s; animation-delay: 2s; }
+.heart:nth-child(11) { left: 35%; animation-duration: 6.5s; animation-delay: 2.5s; }
+.heart:nth-child(12) { left: 55%; animation-duration: 7.5s; animation-delay: 1s; }
+.heart:nth-child(13) { left: 75%; animation-duration: 6s; animation-delay: 2s; }
+.heart:nth-child(14) { left: 25%; animation-duration: 8s; animation-delay: 0.5s; }
+.heart:nth-child(15) { left: 65%; animation-duration: 7s; animation-delay: 1.5s; }
+
+
